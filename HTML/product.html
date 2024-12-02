@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/product.css">
+    <title>Laoag City</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="https://laoagcity.gov.ph/"><img src="../Image/logo.png" alt="Laoag City"></a></div>
+                <a href="https://laoagcity.gov.ph/"><span class="logo name">Laoag City</span></a>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">About</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">About</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-intro">
+        <div class="intro">
+            <h1>ILOCANO PRODUCTS </h1>
+            <p>Aside from those sumptuous delectable Ilocano cuisine, there are also other products Laoag has to offer. From crunchy snacks, native cakes, to wines and more! And most of the products are available at the Laoag City Commercial Complex, specially during market days (Wednesday and Sunday), truly a one-stop-shop!</p>
+            <button class="button"><a class= "read" href="https://laoagcity.gov.ph/tourism/products.html">Read More</a></button>
+        </div>
+        </div>
+
+    <div class="container-row">
+        <div class="container">
+            <h2>BASI</h2>
+            <img src="../Image/basi.jpg" alt="Placeholder Image 1">
+            <p>BASI is the local beverage of Ilocos where it has been consumed since before the Spanish conquest. Commercial basi is produced by first crushing sugarcane and extracting the juice. The juice is boiled in vats and then stored in earthen jars (tapayan). Once the juice has cooled, flavorings made of ground glutinous rice and duhat (java plum) bark or other fruits or barks is added. The jars are then sealed with banana leaves and allowed to ferment for several years.</p>
+        </div>
+        <div class="container">
+            <h2>ILOCANO BAGNET</h2>
+            <img src="../Image/bagnet_buo.jpg" alt="Placeholder Image 2">
+            <p>ILOCANO BAGNET is boiled and deep-fried to achieve the crispy, crunchy pork skin. It's a cross between crispy pata and lechon kawali, both of which have crispy meat that is not too dry. It involves boiling pork chunks in water until they are tender, then the meat is removed. The water is left to boil until only the fatty oil remains. They add a bit of lard to the same pot and the pork is fried in its own oil until the skin becomes tough. It is fried to perfection until the skin becomes crunchy cracklings or chicharon.</p>
+        </div>
+        <div class="container">
+            <h2>ILOCOS LONGGANISA</h2>
+            <img src="../Image/ilocos_longanisa.jpg" alt="Placeholder Image 3">
+            <p>ILOCOS LONGGANISA is a native sausage made from pork meat, herbs, spices and vinegar, stuffed in pork intestine. Sometimes called garlic longganisa to distinguish it from that of Vigan longganisa which is sweeter in taste.</p>
+        </div>
+            <div class="container-row">
+                <div class="container">
+                    <h2>TUPIG</h2>
+                    <img src="../Image/tupig.jpg" alt="Placeholder Image 1">
+                    <p>TUPIG is an Ilocano rice cake originating from northwestern Luzon. It is made from ground slightly-fermented soaked glutinous rice (galapong) mixed with coconut milk, muscovado sugar, and young coconut (buko) strips. It is wrapped into a cylindrical form in banana leaves and baked directly on charcoal, with frequent turning. The name tupig means "flattened", in reference to its shape after cooking.</p>
+                </div>
+                <div class="container">
+                    <h2>DUDOL</h2>
+                    <img src="../Image/dudol.jpg" alt="Placeholder Image 2">
+                    <p>DUDOL is a traditional dessert you will find in Ilocos. Dudol is made of rice flour, coconut milk, sugarcane juice and anise. The secret to making a good dudol is to patiently and continuously stir the ingredients under a slow fire.</p>
+                </div>
+                <div class="container">
+                    <h2>CHICHACORN</h2>
+                    <img src="../Image/chichacorn.jpg" alt="Placeholder Image 3">
+                    <p>CHICHACORN is a semi-popped style of cornick that uses glutinous corn, which is treated with lime before frying. The name is a combination of the words chicharon (crispy pork rinds) and corn. Flavors can be natural, garlic, chili garlic, sweet (seasoned with caramelized white and/or brown sugar), sweet & spicy, barbecue, adobo, and cheese.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; ©Copyright 2024 by Edward T. Domingo</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

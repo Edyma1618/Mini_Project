@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/history.css">
+    <title>Laoag City</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="https://laoagcity.gov.ph/"><img src="../Image/logo.png" alt="Laoag City"></a></div>
+                <a href="https://laoagcity.gov.ph/"><span class="logo name">Laoag City</span></a>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">About</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">About</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>HISTORY OF LAOAG</h1>
+            <p>Long before the coming of the Spaniards, there already existed an extensive region consisting of the present provinces of Ilocos Norte, Ilocos Sur, Abra and La Union renowned for its gold mines. Merchants from Japan and China would often visit the area to trade gold with beads, ceramics and silk. The Austronesian inhabitants of the region called their place samtoy, from sao mi itoy, which literally meant “this is our language.”</p>
+            <button class="button"><a class= "read" href="https://laoagcity.gov.ph/?page_id=192">Read More</a></button>
+        </div>
+        </div>
+    <footer class="footer">
+        <p>&copy; ©Copyright 2024 by Edward T. Domingo</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>

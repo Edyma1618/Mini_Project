@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/festival.css">
+    <title>Laoag City</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="https://laoagcity.gov.ph/"><img src="../Image/logo.png" alt="Laoag City"></a></div>
+                <a href="https://laoagcity.gov.ph/"><span class="logo name">Laoag City</span></a>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">About</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">About</a></li>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+    <div class="intro">
+        <h1>FESTIVITIES IN LAOAG CITY</h1>
+        <p>Every first week of February, Pamulawen is celebrated, marking the feast day of Saint William, the city's patron saint, and is observed by the city government. Amidst the festivities, the Dulang Food Festival takes center stage, showcasing the rich culinary diversity of the region.</p>
+        <button class="button"><a class= "read" href="https://laoagcity.gov.ph/tourism/festivals.html">Read More</a></button>
+    </div>
+    </div>
+    
+    <div><h2>Pamulinawen Festival</h2></div>
+<div class="container">
+    <div class="box box1">
+        <img src="../Image/Pamulinawen-Festival.jpg" alt="Image 1" class="box-image">
+    </div>
+    <div class="box box2">
+        <img src="../Image/pl.jpg" alt="Image 2" class="box-image">
+    </div>
+    <div class="box box3">
+        <img src="../Image/pamulinawen4.jpg" alt="Image 3" class="box-image">
+    </div>
+</div>
+
+<div><h2>Calesa Parade</h2></div>
+<div class="container">
+    <div class="box box1">
+        <img src="../Image/calesa 1.jpg" alt="Image 1" class="box-image">
+    </div>
+    <div class="box box2">
+        <img src="../Image/calesa 2.jpg" alt="Image 2" class="box-image">
+    </div>
+    <div class="box box3">
+        <img src="../Image/calesa 3.jpg" alt="Image 3" class="box-image">
+    </div>
+</div>
+
+<div><h2>Grand Floral Parade</h2></div>
+<div class="container">
+    <div class="box box1">
+        <img src="../Image/fparade01.jpg" alt="Image 1" class="box-image">
+    </div>
+    <div class="box box2">
+        <img src="../Image/fparade02.jpg" alt="Image 2" class="box-image">
+    </div>
+    <div class="box box3">
+        <img src="../Image/fparade05.jpg" alt="Image 3" class="box-image">
+    </div>
+</div>
+
+<div><h2>Capitol Light Show Display</h2></div>
+<div class="container">
+    <div class="box box1">
+        <img src="../Image/capitol1.jpg" alt="Image 1" class="box-image">
+    </div>
+    <div class="box box2">
+        <img src="../Image/capitol2.jpg" alt="Image 2" class="box-image">
+    </div>
+    <div class="box box3">
+        <img src="../Image/capitol3.webp" alt="Image 3" class="box-image">
+    </div>
+</div>
+
+    <footer class="footer">
+    <p>&copy; ©Copyright 2024 by Edward T. Domingo</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>

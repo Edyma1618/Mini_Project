@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <title>Laoag City</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="https://laoagcity.gov.ph/"><img src="../Image/logo.png" alt="Laoag City"></a></div>
+                <a href="https://laoagcity.gov.ph/"><span class="logo name">Laoag City</span></a>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">About</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">About</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="intro">
+                <h1>The Sunshine City</h1>
+                <p>Laoag is the capital city of Ilocos Norte, which boasts of a charming blend of small-town traditional culture and a dynamic, modern lifestyle. It also features a mix of a rich Spanish influence, marked by beautifully preserved ancestral houses, colonial architecture buildings, and century-old churches, and an Ilocano heritage that is mostly evident in its local customs and delectable cuisine.</p>
+                <button class="button"><a class="read" href="https://guidetothephilippines.ph/destinations-and-attractions/laoag">Read More</a></button>
+
+            </section>
+        
+            <section class="tourist">
+                <h2>Tourist Spots</h2>
+                <div class="tourist-spots">
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/belltower.html"><img src="../Image/sinking-bell-tower.jpg" alt="Tourist Spot 1"><h4> SINKING BELL TOWER</h4></a>
+                        
+
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/museo.html"><img src="../Image/MUSEO.jpg" alt="Tourist Spot 2"><h4> MUSEO ILOCOS NORTE</h4></a>
+                        
+                        
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/cathedral.html"><img src="../Image/st-william-cathedral.jpg" alt="Tourist Spot 3"><h4> ST. WILLIAM THE HERMIT CATHEDRAL</h4></a>
+                        
+
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/monopoly.html"><img src="../Image/tobacco-monopoly-monument.jpg" alt="Tourist Spot 4"> <h4>TOBACCO MONOPOLY MONUMENT</h4></a>
+                        
+                        
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/aurora.html"><img src="../Image/Aurora park.jpg" alt="Tourist Spot 5"> <h4>AURORA PARK</h4></a>
+                        
+                        
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/ermita.html"><img src="../Image/Ermita hill.jpg" alt="Tourist Spot 6"><h4>ERMITA HILL</h4></a>
+                         
+
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/sanddunes.html"><img src="../Image/sand dunes.jpg" alt="Tourist Spot 6"> <h4>SAND DUNES</h4></a>
+                        
+
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/capitol.html"><img src="../Image/CAPITOL.jpg" alt="Tourist Spot 6"> <h4>ILOCOS NORTE PROVINCIAL CAPITOL</h4></a>
+                        
+
+                        <a href="https://laoagcity.gov.ph/tourism/places_of_interest/airport.html"><img src="../Image/AIRPORT.jpg" alt="Tourist Spot 6"> <h4>LAOAG INTERNATIONAL AIRPORT</h4></a>
+                        
+                        
+                        
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer">&copy; ©Copyright 2024 by Edward T. Domingo</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
+
